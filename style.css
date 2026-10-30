@@ -1,0 +1,178 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar {
+position: relative;
+}
+.nav-bar ul {
+    list-style-type:none;
+    text-align: center;
+display: flex;
+justify-content: space-evenly;
+padding-left: 20%;
+}
+.nav-bar a {
+text-decoration: none;
+color:aliceblue;
+
+}
+
+ a:hover {
+text-decoration: none;
+color:lawngreen;
+
+}
+a:active {
+text-decoration: none;
+color:crimson;
+
+}
+.nav-bar .nav-icon {
+position: absolute;
+top: 1%;
+left: 3%;
+}
+
+.menu-icon {
+    display: none;
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    z-index: 2;
+}
+.menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: darkgreen;
+    z-index: 1;
+    transition-duration: 2s;
+}
+.menu-list  a {
+   text-decoration: none;
+color:aliceblue;
+display: block;
+justify-content: space-around;
+padding: 10px;
+text-align: center;
+
+}
+
+.hero {
+    background-image: url("./gallery/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+
+
+
+.button1 {
+     list-style-type:none;
+    text-align: center;
+position: absolute;
+top: 65%;
+left: 20%;
+padding: 10px;
+width: 120px;
+background-color: green;
+border-radius: 15px;
+padding: 15px 5px;
+border: 1px solid green;
+
+}
+.button1 > a {
+   text-decoration: none;
+    text-align: center; 
+color:lightskyblue;
+font-size: large;
+}
+.button1:hover {
+  background-color: lightskyblue;
+border-radius: 8px;
+border: 5px solid lightskyblue;
+padding: 5px 3px; 
+transition-duration: 1s;
+}
+.button1:hover > a {
+    text-decoration: none;
+    text-align: center; 
+    color:green;
+font-size: large;
+}
+
+.button2 {
+     list-style-type:none;
+    text-align: center;
+position: absolute;
+top: 65%;
+right: 20%;
+background-color: lightskyblue;
+border-radius: 8px;
+border: 5px solid lightskyblue;
+padding: 5px 3px;
+}
+.button2 > a {
+   text-decoration: none;
+    text-align: center; 
+    color:green;
+font-size: large;
+}
+.button2:hover {
+  padding: 10px;
+width: 120px;
+background-color: green;
+border-radius: 15px;
+padding: 15px 5px;
+border: 1px solid green;  
+transition-duration: 1s;
+}
+.button2:hover > a {
+   text-decoration: none;
+    text-align: center; 
+color:lightskyblue;
+font-size: large;
+}
+
+/* divs with flex boxes */
+.content1 {
+
+
+}
+.content2 {
+
+}
+.content3 {
+
+}
+.contact {
+
+}
+footer {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+body {background-color: aquamarine;}
+
+    .nav-bar{
+        display: none;
+    }
+.menu-icon {
+    display: block;
+}
+
+
+   
+
+}
