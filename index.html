@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home| Health Plus Uganda</title>
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
+  </head>
 <body>
 
 <div class="hero">
@@ -23,7 +23,7 @@
 
 </ul>
    </div>
-<img src="./gallery/menu.png" width="50" alt="menu" class="menu-icon">
+<img src="./gallery/menu.png" width="50" alt="menu" class="menu-icon ">
 
    <div class="menu">
     <!-- my humbergar menu , i have to make u perfect and style u later with javascript-->
@@ -40,8 +40,8 @@
    <div class="welcome"><span class="welcome2">Welcome |</span> "Your Health. Our Priority."</div>
 <div >
     <ul>
-        <i class="button1"><a href="#explore">EXPLORE</a></i>
-        <i class="button2"><a href="login.html" target="_blank" >Login</a></i>
+        <i class="button1 heartbeat"><a href="#explore">EXPLORE</a></i>
+        <i class="button2 heartbeat"><a href="login.html" target="_blank" >Login</a></i>
 
     </ul>
 </div>
@@ -49,36 +49,188 @@
 </div>
 
 
-<div class="container" id="explore">
-<img src="./gallery/immunisation.jpg" width="520px" alt="">
-<div>
-    <h1>Your Health, Our Priority.</h1>
-    <p> Welcome to HealthPlus Uganda - a trusted health centre in Kampala offering affordable, fast and caring treatment for the whole family.</p>
+<div  id="explore" style="margin-top: 100px; width: 100%; text-align: center;
+ padding: 20px;box-shadow: 0 4px 8px darkblue; background-image: linear-gradient(skyblue,rgb(221, 116, 224))">
+ <h1>Your Health, Our Priority.</h1>
+    <p style="color:aliceblue; margin: 20px 0;" > Welcome to HealthPlus Uganda - a trusted health centre in Kampala offering affordable, fast and caring treatment for the whole family.</p>
 
-  <div>
-    <h2>Fast Service</h2>
-    <p>No long queues. See a doctor in under 30 minutes.</p>
-  </div>
+<div class="container1">
+   <style>
+    .youtube-iframe {
+            width: 1000px; height: 450px;
+          border: none;
+          border-radius: 10px;
+        }
+    @media screen and (max-width: 560px) {
+        .youtube-iframe {
+        width: 360px; height: 450px;
+        border: none;
+        border-radius: 10px;
+    }
+    }
+     
+   
+   </style>
+    <div style="margin-top: 30px;" >
+   <iframe class="youtube-iframe"  src="https://www.youtube.com/embed/MWUM7LIXDeA" allowfullscreen allow="autoplay" allow="controls"></iframe>
+    </div>
+
   <div >
-    <h2>Affordable Care</h2>
-    <p>Fair prices for everyone. No hidden charges.</p>
-  </div>
+    <div>
+      <h2 class="heartbeat1">PRICING</h2>
+      <p>Low Prices</p>
+    </div>
+ 
   <div >
-    <h2>Trusted Team</h2>
+    <h2 class="heartbeat">WHERE QUALITY MATTERS</h2>
+    <p>Professionalism is our Prize.</p>
+
+  <div >
+    <h2 class="heartbeat1">TRUST US TODAY</h2>
     <p>Qualified doctors and nurses who listen to you.</p>
-
-</div>
-     <ul>
-        <i class="button3"><a href="contactUs.html">Book A Visit</a></i>
-        <i class="button4"><a href="service.html" target="_blank" >View Our Services</a></i>
+  </div>
+  <ul>
+        <i class="button3 "><a href="contactUs.html">Book A Visit</a></i>
+        <i class="button4 "><a href="service.html" target="_blank" >View Our Services</a></i>
 
     </ul>
 </div>
+
+  
+
 </div>
 
-<!-- WHY CHOOSE US -->
+    </div>
+</div>
+</div>
+
+<!---- EQUIPMENT SECTION styling,  -->
+
+<style>
+.equipment-section{
+    padding:60px 20px;
+    background:#f8fbfc;
+    text-align:center;
+}
+
+.equipment-section h2{
+    color:#0a7b79;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.equipment-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.equipment-card{
+    background:#fff;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:all .3s ease;
+}
+
+.equipment-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.equipment-card i{
+    font-size:55px;
+    color:#0a7b79;
+    margin-bottom:15px;
+    animation:heartbeat 2s infinite;
+}
+
+.heartbeat{
+  animation:heartbeat 3.5s ease infinite;
+}
+.heartbeat1{
+  animation:heartbeat1 7s 1s infinite;
+}
+@keyframes heartbeat{
+    0%{transform:scale(1.1);}
+    50%{transform:scale(0.5);}
+    70%{transform:scale(0.8);}
+    100%{transform:scale(1);}
+}
+@keyframes heartbeat1{
+    0%{transform:scale(0.1);}
+    50%{transform:scale(1.1);}
+    70%{transform:scale(0.8);}
+   
+    90%{transform:scale(0.4);}
+    100%{transform:scale(0.3);}
+}
+
+.equipment-card h3{
+    margin:10px 0;
+    color:#222;
+}
+
+.equipment-card p{
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+}
+</style>
+
+<section class="equipment-section">
+
+    <h2>Our Medical Equipment</h2>
+
+    <div class="equipment-container">
+
+        <div class="equipment-card">
+            <i class="fas fa-heart-pulse"></i>
+            <h3>ECG Machine</h3>
+            <p>Advanced heart monitoring for accurate cardiac diagnosis.</p>
+        </div>
+
+        <div class="equipment-card">
+            <i class="fas fa-x-ray"></i>
+            <h3>Digital X-Ray</h3>
+            <p>High-quality imaging for quick and reliable examinations.</p>
+        </div>
+
+        <div class="equipment-card">
+            <i class="fas fa-microscope"></i>
+            <h3>Laboratory Microscope</h3>
+            <p>Used for blood tests and detailed laboratory analysis.</p>
+        </div>
+
+        <div class="equipment-card">
+            <i class="fas fa-bed-pulse"></i>
+            <h3>Patient Monitor</h3>
+            <p>Continuous monitoring of vital signs and patient health.</p>
+        </div>
+
+        <div class="equipment-card">
+            <i class="fas fa-kit-medical"></i>
+            <h3>Emergency Equipment</h3>
+            <p>Essential tools for emergency response and urgent care.</p>
+        </div>
+
+        <div class="equipment-card">
+            <i class="fas fa-stethoscope"></i>
+            <h3>Consultation Tools</h3>
+            <p>Professional diagnostic equipment for routine assessments.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WHY CHOOSE US 
 <h2>Why Choose Us</h2>
-<div class="container">
+<div class="container" >
   <div class="box">
     <h3>Fast Service</h3>
     <p>No long queues. See a doctor in under 30 minutes.</p>
@@ -92,105 +244,69 @@
     <p>Qualified doctors and nurses who listen to you.</p>
   </div>
 </div>
+-->
 
-<!-- ABOUT US -->
-<h2>About Us</h2>
-<div class="container">
-  <div class="box">
-    <h3>About HealthPlus Uganda</h3>
-    <p>We started to bring good healthcare closer to the community.</p>
-    <p><b>Mission:</b> To provide safe, affordable healthcare to all.</p>
-    <p><b>Vision:</b> A healthy community where no one fears the health centre.</p>
-  </div>
-  <div class="box">
-    <h3>Who We Serve</h3>
-    <p>Children, mothers, fathers, elders, students and workers.</p>
-    <p><b>What makes us unique:</b> We explain illness in simple language.</p>
-  </div>
-</div>
+
 
 <!-- SERVICES -->
 <h2>Our Services</h2>
 <div class="container">
-  <div class="box">
+  <div class="box heartbeat1">
     <img src="./gallery/counselling.jpg" alt="Counselling">
     <h3>1. General Consultation</h3>
     <p>Fever, headache, cough, stomach pain. Doctor will examine you.</p>
   </div>
-  <div class="box">
+  <div class="box heartbeat1">
     <img src="./gallery/microscope.jpg" alt="Laboratory Testing">
     <h3>2. Laboratory Testing</h3>
     <p>Malaria, Typhoid, Diabetes, HIV. Results in under 1 hour.</p>
   </div>
-  <div class="box">
-    <img src="./gallery/pharmacy.jpg" alt="Pharmacy">
-    <h3>3. Pharmacy</h3>
-    <p>Stocked daily with genuine medicine like Paracetamol and Amoxicillin.</p>
-  </div>
-  <div class="box">
+  
+  <div class="box heartbeat1">
     <img src="./gallery/pregnant.jpg" alt="Maternal & Child Health">
     <h3>4. Maternal & Child Health</h3>
     <p>Antenatal care, immunization and growth monitoring for babies.</p>
   </div>
-  <div class="box">
+  <div class="box ">
     <img src="./gallery/immunisation.jpg" alt="Vaccination">
-    <h3>5. Vaccination</h3>
-    <p>Vaccines for children and adults.</p>
+    <h3 style="color: red; text-align: center;">Follow this link For services</h3>
+    <p style="text-align: center;"><a href="service.html" target="_blank" >More Services</a></p>
   </div>
-  <div class="box">
-    <img src="./gallery/lab.jpg" alt="Emergency & First Aid">
-    <h3>6. Emergency & First Aid</h3>
-    <p>Quick care for accidents and sudden illness.</p>
-  </div>
-  <div class="box">
-    <img src="./gallery/outreach.jpg" alt="Outreach">
-    <h3>7. Outreach</h3>
-    <p>Community health education and prevention programs.</p>
-  </div>
-</div>
-
-<!-- EQUIPMENT -->
-<h2>Our Equipment</h2>
-<div class="container">
-  <div class="box"><h3>Microscope</h3><p>For blood tests.</p></div>
-  <div class="box"><h3>Blood Pressure Machine</h3><p>To check hypertension.</p></div>
-  <div class="box"><h3>Thermometer</h3><p>To check fever.</p></div>
-  <div class="box"><h3>Stethoscope</h3><p>To listen to heart.</p></div>
-  <div class="box"><h3>Examination Bed</h3><p>For check-ups.</p></div>
-  <div class="box"><h3>Gloves</h3><p>Safe, single-use.</p></div>
 </div>
 
 <!-- FAQ -->
 <h2>Frequently Asked Questions</h2>
+
 <div class="container">
   <div class="box">
-    <p><b>Q: Do I need an appointment?</b><br>A: No, you can walk in.</p>
-    <p><b>Q: Opening hours?</b><br>A: Mon-Fri 8am-5pm, Sat 9am-1pm.</p>
-    <p><b>Q: Do you accept insurance?</b><br>A: Yes, bring your card.</p>
+    <p><b>Q: Do I need an appointment?</b></p>
+       <p style ="color: navy"> A: No, you can walk in.</p>
+    <p><b>Q: Opening hours?</b></p>
+      <p style ="color: navy"> A: Mon-Fri 8am-5pm, Sat 9am-1pm.</p>
   </div>
-  <div class="box">
-    <p><b>Q: How much is consultation?</b><br>A: Affordable. We tell you price before test.</p>
-    <p><b>Q: Is my information private?</b><br>A: Yes, only medical team sees it.</p>
-  </div>
- 
+
     <p>More<a href="faq.html"> FAQs</a></p>
 </div>
-<!-- ADMIN LOGIN -->
-<h2>Admin Login</h2>
-<div class="container">
-  <div class="box">
+
+
+ <!-- ADMIN LOGIN -->
+<h2><i class="fa-solid fa-lock" style="color: darkgreen;"></i> Admin Portal Login</h2>
+<div class="container" style="margin: 5%;">
+  <div >
     <h3>Login to view stocked medicine</h3>
-    <input type="text" id="user" placeholder="Username">
-    <input type="password" id="pass" placeholder="Password">
-    <button onclick="login()">Login</button>
+    <form id="myAdmin">
+        <input type="text" id="user" placeholder="Username" required>
+    <input type="password" id="pass" placeholder="Password" required>
+    <button type="submit">Login</button>
+    </form>
     <p id="loginMsg"></p>
   </div>
 </div>
-
 <!-- CONTACT FORM -->
+
 <h2>Contact Us</h2>
 <div class="container">
-  <div class="box">
+  <div >
     <h3>Visit Us</h3>
     <p>Plot 12, Kampala Road, Kampala</p>
     <p>Call: +256 700 000 000</p>
@@ -211,10 +327,10 @@
 <footer>
   <h3>HealthPlus Uganda</h3>
   <p>Care. Health. Community.</p>
-  <p>Plot 12, Kampala Road | +256 700 000 000</p>
+  <p>Plot 12, Kampala Road |<a href="tel:+783101345"></a> +256 783 101345</p>
+  <p>Made By Group E WebDev Nkumba University 2026</p>
   <p>© 2026 HealthPlus Uganda. All Rights Reserved.</p>
 </footer>
-
    <script src="script.js"></script>
 
 </body>

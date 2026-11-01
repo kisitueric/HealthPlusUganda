@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administration Login|Health Plus Uganda</title>
-</head>
-<body>
-   <!--login page for adminitration to see stock--> 
-   
+    <title><i class="fa-solid fa-lock"></i>Administration Login|Health Plus Uganda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+<body class="heroForAllpages"  >
+
+<div >
+   <div class="nav-bar">
+    <span class="nav-icon"><img src="./gallery/logo.png" width="80" alt="logo"></span>
+<ul>
+    <i><a href="index.html">Home</a></i>
+    <i><a href="service.html" target="_blank">Services</a></i>
+    <i><a href="about.html" target="_blank" >About Us</a></i>
+    <i><a href="contactUs.html" target="_blank" >Contact Us</a></i>
+    <i><a href="gallery.html" target="_blank" >Gallery</a></i>
+    <i><a href="faq.html" target="_blank" >FAQs</a></i>
+
+</ul>
+   </div>
+<img src="./gallery/menu.png" width="50" alt="menu" class="menu-icon ">
+
+   <div class="menu">
+    <!-- my humbergar menu , i have to make u perfect and style u later with javascript-->
+<ul class="menu-list">
+    <i><a href="index.html">Home</a></i>
+    <i><a href="service.html" target="_blank">Services</a></i>
+    <i><a href="about.html" target="_blank" >About Us</a></i>
+    <i><a href="contactUs.html" target="_blank" >Contact Us</a></i>
+    <i><a href="gallery.html" target="_blank" >Gallery</a></i>
+    <i><a href="faq.html" target="_blank" >FAQs</a></i>
+
+</ul>
+   </div>
+</div>
+<style>
+   section {
+    width: 100%; height:600px;
+     margin-top:20%;
+     padding-top:25px; 
+     background-color: aliceblue;
+      border-radius: 100px;
+   } 
+   @media screen and (min-width= "600px") {
+    section {
+    width: 100%;
+     height:800px;
+     margin-top:20%;
+     padding-top:25px; 
+     background-color: aliceblue;
+      border-radius: 100px;
+   } 
+   }
+</style>
+  <section>
+    
+<!-- ADMIN LOGIN -->
+<h2><i class="fa-solid fa-lock" style="color: darkgreen;"></i> Admin Portal Login</h2>
+<div class="container" style="margin: 5%;">
+  <div >
+    <h3>Login to view stocked medicine</h3>
+    <form id="myAdmin">
+        <input type="text" id="user" placeholder="Username" required>
+    <input type="password" id="pass" placeholder="Password" required>
+    <button type="submit">Login</button>
+    </form>
+    <p id="loginMsg"></p>
+  </div>
+</div>
+</section>
+
+
+
+
+ 
+
+<!-- FOOTER -->
+<footer>
+  <h3>HealthPlus Uganda</h3>
+  <p>Care. Health. Community.</p>
+  <p>Plot 12, Kampala Road |<a href="tel:+783101345"></a> +256 783 101345</p>
+  <p>Made By Group E WebDev Nkumba University 2026</p>
+  <p>© 2026 HealthPlus Uganda. All Rights Reserved.</p>
+</footer>
+
+   <script src="script.js"></script>
+
 </body>
 </html>
